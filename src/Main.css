@@ -1,0 +1,83 @@
+/* Hero section starts here */
+
+.text-pulse {
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+  animation: pulse 1s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  from { text-shadow: 0 0 2px rgba(255, 0, 0, 0.8); }
+  to { text-shadow: 0 0 7px rgba(255, 0, 0, 0.8); }
+}
+
+
+
+/* #8ad3dd; */
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    padding: 45px 60px;
+    background-color: #f9ede5;
+    justify-content:space-evenly;
+  }
+
+
+  img{
+    width: 450px;
+    height: auto;
+    border-radius: 2%;
+  }
+
+  .About-me-section{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+  }
+
+  .headline{
+    font-size: 30px;
+    /* font-family: 'Caveat'; */
+    color: var(--accent);
+  }
+  
+  .Roles{
+    font-size: 55px;
+    /* -webkit-text-stroke: 1px #8ad3dd; */
+    color: rgb(36, 8, 62);
+  }
+ 
+  .more{
+    color: blueviolet;
+  }
+
+
+  .main-intro{
+    padding-bottom: 5px;
+  }
+
+  .request-work{
+    font-size: 30px;
+    padding: 25px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+  }
+
+  .scroll-down{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    animation-name: swivel-animation;
+    animation-duration: 1.5s;
+    text-align: center;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes swivel-animation{
+    0%   {top:0px;}
+    100% {top:40px;}
+  }
+
+  
+  /* Hero section ends here */
+  

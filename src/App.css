@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+} /* 16px */
+
+.App {
+  text-align: center;
+  --text: #130e01;
+  --primary: #ff8400;
+  --secondary: #fff5d6;
+  --accent: #cf4307;
+  color: var(--text);
+}
+
+
+
+
+/* Navigation section starts here */
+
+.nav-container{
+  display: flex;
+  flex-direction: row;
+  background-color: #f9ede5;
+  height: 70px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(232, 227, 227);
+  position: sticky;
+}
+
+.brand{
+  margin-left: 80px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+
+.navigation-options{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 80px;
+  border-radius: 10px;
+}
+
+ul{
+  list-style-type: none;
+  padding: 5px;
+}
+
+.option{
+  padding: 20px;   /*need to add condition where padding is less when screen size gets to mobile screen size*/
+}
+
+.fancy-link{
+  text-decoration: none;
+  font-weight: 500;
+  color: #04010e;
+  font-size: medium;
+  position: relative;
+}
+
+.fancy-link::after {
+  content: "";
+  background-color: #04010e;
+  /* top: 20px; */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 2px;
+  color: #04010e;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms ease-in;
+}
+
+.fancy-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+
+}
+/* Navigation section ends here */
+
+
+
+
+/* Services section starts here */
+
+.Service-section{
+  background-image: linear-gradient(to bottom right, #FFDDC8,#DAD0FF);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+ 
+.service-header{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  
+}
+/* Services section ends here */
